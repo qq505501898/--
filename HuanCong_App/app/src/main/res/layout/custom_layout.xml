@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="@dimen/x30">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="所在地"
+        android:textSize="@dimen/x40" />
+
+
+    <TextView
+        android:id="@+id/XuanZeChengshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="选择其他城市 >"
+        android:textSize="@dimen/x40" />
+
+    <TextView
+        android:id="@+id/Text_ChengShi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:background="@drawable/text"
+        android:text="北京" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignEnd="@+id/XuanZeChengshi"
+        android:layout_alignRight="@+id/XuanZeChengshi"
+        android:layout_below="@+id/Text_ChengShi"
+        android:layout_marginTop="26dp"
+        android:background="#bababa" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="22dp"
+        android:text="其他服务"
+        android:textSize="@dimen/x40" />
+
+
+    <TextView
+        android:id="@+id/Text_XiZhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Text_ChengShi"
+        android:layout_alignStart="@+id/Text_ChengShi"
+        android:layout_alignTop="@+id/Text_JieSong"
+        android:background="@drawable/text"
+        android:text="洗澡" />
+
+    <TextView
+        android:id="@+id/Text_JieSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/text"
+        android:text="接/送" />
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Text_XiZhao"
+        android:layout_marginTop="31dp"
+        android:background="#bababa" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="节假日筛选"
+        android:textSize="@dimen/x40" />
+
+    <TextView
+        android:id="@+id/Text_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/text"
+        android:text="接/送" />
+
+
+    <TextView
+        android:id="@+id/Text_Yuandan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Text_XiZhao"
+        android:layout_alignStart="@+id/Text_XiZhao"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/text"
+        android:text="元旦接单" />
+
+    <TextView
+        android:id="@+id/Text_ChunJie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Text_JieSong"
+        android:layout_alignStart="@+id/Text_JieSong"
+        android:layout_alignTop="@+id/Text_Yuandan"
+        android:background="@drawable/text"
+        android:text="春节接单" />
+
+    <TextView
+        android:id="@+id/Text_Qingming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/XuanZeChengshi"
+        android:layout_alignStart="@+id/XuanZeChengshi"
+        android:layout_alignTop="@+id/Text_ChunJie"
+        android:background="@drawable/text"
+        android:text="清明节接单" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Text_Yuandan"
+        android:layout_marginTop="48dp"
+        android:background="#bababa" />
+
+
+    <Button
+        android:id="@+id/Btn_OK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view4"
+        android:layout_marginTop="43dp"
+        android:background="#ffff00"
+        android:text="确定" />
+</RelativeLayout>
